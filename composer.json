@@ -8,8 +8,6 @@
         "phpunit/phpunit": "*"
     },
     "autoload": {
-        "classmap": [
-            "src/Renderer.php"
-        ]
+        "classmap": ["src/Renderer.php"]
     }
 }
