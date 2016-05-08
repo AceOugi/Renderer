@@ -50,29 +50,6 @@ class Renderer
         return (isset(static::$__data[$key]) OR array_key_exists($key, static::$__data)) ? true : false;
     }
 
-    /**
-     * @param string $key
-     * @param $value
-     * @return self
-     */
-    public function with(string $key, $value)
-    {
-        $new = clone $this;
-        $new->data[$key] = $value;
-        return $new;
-    }
-
-    /**
-     * @param string $key
-     * @return self
-     */
-    public function without(string $key)
-    {
-        $new = clone $this;
-        unset($new->data[$key]);
-        return $new;
-    }
-
     public function make()
     {
         extract(static::$__data + $this->data);
