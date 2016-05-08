@@ -34,7 +34,7 @@ class Renderer
 
     /**
      * @param string $key
-     * @return mixed
+     * @return mixed|null
      */
     public static function get(string $key)
     {
