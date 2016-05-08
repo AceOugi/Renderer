@@ -33,16 +33,6 @@ class Renderer
     }
 
     /**
-     * Alias of ::set
-     * @param string $key
-     * @param $value
-     */
-    public static function share(string $key, $value)
-    {
-        static::set($key, $value);
-    }
-
-    /**
      * @param string $key
      * @return mixed
      */
