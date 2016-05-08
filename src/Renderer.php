@@ -25,7 +25,7 @@ class Renderer
 
     /**
      * @param string $key
-     * @param $value
+     * @param mixed $value
      */
     public static function set(string $key, $value)
     {
