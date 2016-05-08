@@ -29,7 +29,7 @@ class Renderer
      */
     public static function set(string $key, $value)
     {
-        static::$__data[$key] = $value;
+        self::$__data[$key] = $value;
     }
 
     /**
@@ -38,7 +38,7 @@ class Renderer
      */
     public static function get(string $key)
     {
-        return static::$__data[$key] ?? null;
+        return self::$__data[$key] ?? null;
     }
 
     /**
@@ -47,12 +47,13 @@ class Renderer
      */
     public static function has(string $key)
     {
-        return (isset(static::$__data[$key]) OR array_key_exists($key, static::$__data)) ? true : false;
+        return (isset(self::$__data[$key]) OR array_key_exists($key, self::$__data)) ? true : false;
     }
+
 
     public function make()
     {
-        extract(static::$__data + $this->data);
+        extract(self::$__data + $this->data);
         include $this->path;
     }
 
