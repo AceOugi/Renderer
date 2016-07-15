@@ -1,5 +1,5 @@
 {
-    "name": "aceougi/renderer",
+    "name": "ace/renderer",
     "type": "library",
     "require": {
         "php": "^7.0"
